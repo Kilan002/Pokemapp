@@ -122,21 +122,118 @@ export default {
 
 <style scoped>
 .region-map-view {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 25% ;
+  margin: 10 auto;
   padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
   color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .pokemon-content {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pokemon-search, .loading-spinner, .error-message {
+  margin-bottom: 20px;
+}
+
+.loading-spinner {
+  text-align: center;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  background-color: #f8d7da;
   border-radius: 8px;
-  padding: 20px;
+  padding: 15px;
+  color: #721c24;
+  font-size: 1.1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.error-message .retry-button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-message .retry-button:hover {
+  background-color: #e74c3c;
+}
+
+.region-map {
+  margin-top: 30px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 992px) {
+  .region-map-view {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .region-map-view {
+    max-width: 95%;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .pokemon-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .region-map-view {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .pokemon-content {
+    padding: 15px;
+  }
+  
+  .error-message {
+    font-size: 1rem;
+    padding: 12px;
+  }
 }
 </style>

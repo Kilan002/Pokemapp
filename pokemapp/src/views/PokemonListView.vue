@@ -101,14 +101,21 @@ export default {
 
 <style scoped>
 .pokemon-map-view {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 25% ;
+  margin: 10 auto;
   padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
+  font-weight: bold;
 }
 </style>
