@@ -101,13 +101,10 @@ export default {
 
 <style scoped>
 .pokemon-map-view {
-<<<<<<< HEAD
   width: 400%;
   max-width: 1150px;
-=======
   width: 100%;
   max-width: 900px;
->>>>>>> 640bd41a7d482507350eb448706f401112804233
   margin-top: 25% ;
   margin: 10 auto;
   padding: 20px;
