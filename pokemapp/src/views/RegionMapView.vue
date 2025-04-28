@@ -2,7 +2,7 @@
   <div class="region-map-view">
     <h1>Mapa de Regiones Pokémon</h1>
     
-    <pokemon-search @search="searchPokemon" />
+    <pokemon-search @search="searchPokemon"/>
     
     <loading-spinner v-if="loading" text="Buscando Pokémon..." />
     
@@ -122,8 +122,13 @@ export default {
 
 <style scoped>
 .region-map-view {
+<<<<<<< HEAD
+  width: 400%;
+  max-width: 1150px;
+=======
   width: 100%;
   max-width: 900px;
+>>>>>>> 640bd41a7d482507350eb448706f401112804233
   margin-top: 25% ;
   margin: 10 auto;
   padding: 20px;
@@ -137,6 +142,10 @@ h1 {
   text-align: center;
   color: #333;
   margin-bottom: 30px;
+<<<<<<< HEAD
+  margin-top: 1%;
+=======
+>>>>>>> 640bd41a7d482507350eb448706f401112804233
   font-weight: bold;
 }
 
